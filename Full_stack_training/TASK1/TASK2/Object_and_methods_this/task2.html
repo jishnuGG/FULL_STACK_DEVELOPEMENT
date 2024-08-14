@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let book={
+            title:"attitude for everything",
+            author:"jeff",
+            yearPublished:2024,
+            age(a)
+            {
+                return this.yearPublished-a;
+            }
+            
+            ,
+            getsummary()
+            {
+                 console.log(this.author+"\n"+this.title+"\n"+this.yearPublished);
+            }
+          };
+       book.getsummary();
+       console.log(book.age(4));
+    </script>
+</body>
+</html>
