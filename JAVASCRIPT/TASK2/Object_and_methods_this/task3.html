@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let calculator={
+            add(a,b)
+            {
+                return a+b;
+            },
+            multiply:(a,b)=> a*b,
+            division:(a,b)=>a/b,
+            toString:function()
+            {
+                console.log(this.multiply(3,5)+" "+this.add(3,5)+" "+this.division(3,5));
+            }
+        };
+        console.log(calculator.add(3,5));
+        console.log(calculator.multiply(3,5));
+        console.log(calculator.division(3,5));
+        console.log(calculator.toString());
+    </script>
+</body>
+</html>
