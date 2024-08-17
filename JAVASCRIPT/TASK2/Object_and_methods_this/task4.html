@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let calculator={
+            add(a,b)
+            {
+                return a+b;
+            },
+            subract:(a,b)=>a-b,
+            multiply:(a,b)=>a*b,
+            division:(a,b)=>a/b
+        };
+        let n=+prompt("enter the n steps");
+        /*
+        console.loh("press 1 to add");
+        console.loh("press 2 to subract");
+        console.loh("press 3 to multiply");
+        console.loh("press 1 to divide");*/
+        let a,b;
+        var arr=[];
+        for(i=0;i<n;i++)
+        {
+             a=+prompt("enter num");
+             b=+prompt("enter num");
+          arr.push(calculator.add(a,b));
+          arr.push(calculator.subract(a,b));
+          arr.push(calculator.multiply(a,b));
+          arr.push(calculator.division(a,b));
+       }
+       console.log(arr);
+    </script>
+</body>
+</html>
