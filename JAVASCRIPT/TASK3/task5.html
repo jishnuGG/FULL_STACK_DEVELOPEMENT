@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tower(n,from,to,output){
+            if(n===0){
+                return;
+            }
+            tower(n-1,from,output,to);
+            console.log("Move disk"+n+"from"+from+"to"+to);
+            tower(n-1,output,from,to);
+
+        }
+        console.log(towez)
+    </script>
+</body>
+</html>
